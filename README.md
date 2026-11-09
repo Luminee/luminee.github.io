@@ -1,37 +1,33 @@
-## Welcome to GitHub Pages
+# luminee.github.io
 
-You can use the [editor on GitHub](https://github.com/Luminee/luminee.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+个人静态资源仓库：图片通过 **GitHub Pages** 托管，供外部引用（DSH 背景图、文档配图等）。
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## 访问方式
 
-### Markdown
+同一份文件有三种取法，按场景选：
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+| 方式 | URL 格式 | 说明 |
+|---|---|---|
+| **GitHub Pages**（推荐） | `https://luminee.github.io/<路径>` | 稳定、走 CDN 缓存，适合直接填进页面/应用的图片链接 |
+| raw 直链 | `https://raw.githubusercontent.com/Luminee/luminee.github.io/master/<路径>` | 原始文件，不加任何处理 |
+| jsDelivr CDN | `https://cdn.jsdelivr.net/gh/Luminee/luminee.github.io@master/<路径>` | 国内通常更快（`@master` 会 301 跳到具体版本，浏览器可正常跟随） |
 
-```markdown
-Syntax highlighted code block
+## 图片资源
 
-# Header 1
-## Header 2
-### Header 3
+| 文件 | 大小 | Pages 直链 |
+|---|---|---|
+| `pictures/illust_136567946_20260317_100249.png` | 4.9 MB | <https://luminee.github.io/pictures/illust_136567946_20260317_100249.png> |
+| `pictures/0025.jpg` | 1.2 MB | <https://luminee.github.io/pictures/0025.jpg> |
+| `pictures/p_wallpaper.jpg` | 426 KB | <https://luminee.github.io/pictures/p_wallpaper.jpg> |
 
-- Bulleted
-- List
+## 新增一张图
 
-1. Numbered
-2. List
+1. 把文件放进 `pictures/`；
+2. 提交并推送到 `master`；
+3. 用上面的 URL 格式访问（Pages 构建后生效，通常几十秒内）。
 
-**Bold** and _Italic_ and `Code` text
+## 注意
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Luminee/luminee.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- 仓库是 **public**：任何拿到链接的人都能访问这些文件；
+- 单文件过大（> 1 MB）时首次加载慢，需要的话先压缩或另存缩略图；
+- 不要在此存放任何私密内容。
